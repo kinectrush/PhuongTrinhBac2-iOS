@@ -93,7 +93,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 } else if(c==0){
                     lblnghiem1.text = "x = 0"
                 } else{
-                    lblnghiem1.text = "x = \(-c/b)!"
+                    lblnghiem1.text = "x = \(-c/b)"
                 }
             } else {
                 let delta = ((b*b) - (4*a*c))
@@ -101,13 +101,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
                     lblnghiem1.text = "Phuong trinh vo nghiem"
                 } else if(delta == 0){
                     let x = (-b) / (2*a)
-                    lblnghiem1.text = "x = \(x)!"
+                    lblnghiem1.text = "x = \(x)"
                 } else{
                     lblnghiem2.isHidden = false
                     let x1 = (-b - sqrt(delta)) / (2*a)
                     let x2 = (-b + sqrt(delta)) / (2*a)
-                    lblnghiem1.text = "x1 = \(x1)!"
-                    lblnghiem2.text = "x2 =\(x2)!"
+                    lblnghiem1.text = "x1 = \(x1)"
+                    lblnghiem2.text = "x2 =\(x2)"
                 }
             }
         }
